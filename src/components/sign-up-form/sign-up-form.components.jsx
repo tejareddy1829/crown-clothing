@@ -1,10 +1,12 @@
-import {useState} from "react";
+import {useState, useContext} from "react";
 
 import FormInput from "../form-input/form-input.components";
 
 import Button from "../button/button.component";
 
 import "./sign-up-form.styles.scss";
+
+import { UserContext } from "../../contexts/user.context";
 
 import {
   createAuthUserWithEmailAndPassword,
